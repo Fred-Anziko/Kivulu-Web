@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kivulu - Your AI Assistant</title>
+    <title>Kivulu - Your All-in-One AI Assistant</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,122 +12,109 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zm-1 0h1L0 4V3zm2 2h1L2 6h-1zm0-2h1L2 4h-1zm0 2h1L2 6h-1z'/%3E%3C/g%3E%3C/svg%3E");
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
     <!-- Hero Section -->
-    <header class="relative overflow-hidden pt-12 md:pt-24 bg-gradient-to-br from-blue-600 to-indigo-800 text-white">
-        <div class="container mx-auto px-4 py-20 text-center">
+    <header class="relative overflow-hidden pt-12 md:pt-24 bg-gradient-to-br from-purple-600 to-pink-800 text-white">
+        <div class="bg-pattern absolute inset-0 opacity-20 z-0"></div>
+        <div class="container mx-auto px-4 py-20 text-center relative z-10">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight tracking-tight">
-                Your All-in-One AI Assistant for Business & Life
+                Kivulu: Your All-in-One AI Assistant for Business & Life
             </h1>
-            <p class="text-lg sm:text-xl md:text-2xl opacity-90 mb-8 max-w-2xl mx-auto">
-                Kivulu is a revolutionary platform that empowers micro-entrepreneurs by simplifying their business and personal lives.
+            <p class="text-lg sm:text-xl md:text-2xl opacity-90 mb-8">
+                Unify your business, gig work, and personal tasks in a single, smart chat.
             </p>
-            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
-                Get Started
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/256742453863?text=Hello%2C%20I'd%20like%20to%20learn%20more%20about%20Kivulu!" class="inline-block bg-white text-purple-600 font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300">
+                Start a chat on WhatsApp
             </a>
         </div>
     </header>
 
-    <!-- Problem Section -->
-    <section class="py-16 md:py-24 px-4">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The Problem We Solve</h2>
-            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
-                <p class="text-lg md:text-xl leading-relaxed text-gray-700">
-                    Micro-entrepreneurs are the backbone of their economies, but they face a critical challenge: **fragmented productivity**. They rely on inefficient, disjointed methods—from notebooks for sales records to multiple messaging apps for gig work—leading to wasted time, lost financial data, and a constant cognitive burden that prevents them from scaling their businesses.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="bg-blue-50 py-16 md:py-24 px-4">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The Kivulu Solution</h2>
-            <div class="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8">
-                <!-- Shop Management -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center w-full lg:w-1/3 transition-transform hover:scale-105 duration-300">
-                    <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5 8a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm0 4a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"/></svg>
-                    <h3 class="text-xl font-bold mb-2">Shop Management</h3>
-                    <p class="text-gray-600">Tracks sales, manages inventory, and generates financial reports, all from a simple chat.</p>
-                </div>
-                <!-- Gig Work -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center w-full lg:w-1/3 transition-transform hover:scale-105 duration-300">
-                    <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"/></svg>
-                    <h3 class="text-xl font-bold mb-2">Gig Work Coordination</h3>
-                    <p class="text-gray-600">Helps you find, manage, and track local gig opportunities to supplement your income.</p>
-                </div>
-                <!-- Household Management -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center w-full lg:w-1/3 transition-transform hover:scale-105 duration-300">
-                    <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 11V7a1 1 0 012 0v4a1 1 0 11-2 0zm1 5a1 1 0 110-2 1 1 0 010 2z"/></svg>
-                    <h3 class="text-xl font-bold mb-2">Personal & Household</h3>
-                    <p class="text-gray-600">Manages to-do lists, sets reminders, and organizes daily routines to simplify your life.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="py-16 md:py-24 px-4">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">How It Works</h2>
-            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
-                <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left space-y-8 md:space-y-0 md:space-x-8">
-                    <!-- Step 1: User -->
-                    <div class="flex-1">
-                        <h3 class="text-2xl font-bold mb-2">You Chat</h3>
-                        <p class="text-gray-600">You simply send a message on WhatsApp as you would to a friend.</p>
-                    </div>
-                    <!-- Arrow -->
-                    <span class="text-4xl text-blue-500 md:self-center transform md:rotate-90">→</span>
-                    <!-- Step 2: AI -->
-                    <div class="flex-1">
-                        <h3 class="text-2xl font-bold mb-2">Kivulu AI Listens</h3>
-                        <p class="text-gray-600">Our AI assistant understands your request and intelligently routes it.</p>
-                    </div>
-                    <!-- Arrow -->
-                    <span class="text-4xl text-blue-500 md:self-center transform md:rotate-90">→</span>
-                    <!-- Step 3: Agents -->
-                    <div class="flex-1">
-                        <h3 class="text-2xl font-bold mb-2">Agents Take Action</h3>
-                        <p class="text-gray-600">Specialized agents perform the task and send a response.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-gray-800 py-16 md:py-24 px-4 text-white">
-        <div class="container mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
-            <p class="text-lg mb-8 opacity-80">
-                Interested in our project or want to learn more? Reach out to us.
-            </p>
-            <div class="bg-gray-700 p-8 rounded-2xl shadow-2xl">
-                <p class="text-lg font-bold mb-4">Contact Person: Fred Anziko</p>
-                <div class="space-y-2 text-left sm:text-center">
-                    <p class="flex items-center justify-center sm:justify-start">
-                        <svg class="w-5 h-5 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 11.233l7.997-5.349A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8V6a2 2 0 00-2-2H4a2 2 0 00-2 2v2l8 5.349L18 8z"/></svg>
-                        <a href="mailto:anzikofred@gmail.com" class="hover:underline">anzikofred@gmail.com</a>
+    <!-- Problem & Solution Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">The Problem: Fragmented Productivity</h2>
+                    <p class="text-gray-700 text-lg mb-4">
+                        Micro-entrepreneurs are the backbone of their economies, but they face a critical challenge: fragmented productivity. They rely on inefficient, disjointed methods—from notebooks for sales records to multiple messaging apps for gig work—leading to wasted time and lost financial data.
                     </p>
-                    <p class="flex items-center justify-center sm:justify-start">
-                        <svg class="w-5 h-5 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H3a1 1 0 01-1-1V3zM7 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H8a1 1 0 01-1-1V3zM12 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1V3zM2 8a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H3a1 1 0 01-1-1V8zM7 8a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H8a1 1 0 01-1-1V8zM12 8a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1V8zM2 13a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H3a1 1 0 01-1-1v-1zM7 13a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H8a1 1 0 01-1-1v-1zM12 13a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1v-1z"/></svg>
-                        <a href="tel:+256742453863" class="hover:underline">+256 742 453863</a>
+                </div>
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-pink-600">The Solution: A Unified AI Assistant</h2>
+                    <p class="text-gray-700 text-lg mb-4">
+                        Kivulu is a revolutionary, AI-powered multi-agent platform designed to solve this problem. It's a conversational assistant accessible directly via WhatsApp, providing a single, intuitive ecosystem of services. Kivulu acts as a unified operating system for a user's life, handling everything from business management to personal tasks within a single chat.
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Key Services Section -->
+    <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">Key Services, Simplified</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">🛒</div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Shop Management</h3>
+                    <p class="text-gray-600">Tracks sales, manages inventory, and generates financial reports for your business.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="text-pink-600 text-4xl mb-4">💼</div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Gig Work Coordination</h3>
+                    <p class="text-gray-600">Helps you find, manage, and track local gig opportunities and income streams.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">🗓️</div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Household & Personal Management</h3>
+                    <p class="text-gray-600">Creates to-do lists, sets reminders, and organizes your daily routines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 md:py-24 bg-purple-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Ready to simplify your life?</h2>
+            <p class="text-lg opacity-90 mb-8">Kivulu is not just a tool; it is a proactive assistant that lives on a platform you already know and trust.</p>
+            <a href="https://wa.me/256742453863?text=Hello%2C%20I'd%20like%20to%20learn%20more%20about%20Kivulu!" class="inline-block bg-white text-purple-600 font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300">
+                Start Your Journey
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
-        <div class="container mx-auto">
-            <p>&copy; 2025 Kivulu. All rights reserved.</p>
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center sm:text-left">
+            <div class="sm:flex sm:justify-between sm:items-center">
+                <h3 class="text-xl font-bold text-white mb-4 sm:mb-0">Kivulu</h3>
+                <div class="sm:flex sm:items-center">
+                    <p class="flex items-center justify-center sm:justify-start mb-2 sm:mb-0 sm:mr-6">
+                        <svg class="w-5 h-5 mr-2 text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 11.233l7.997-5.349A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8V6a2 2 0 00-2-2H4a2 2 0 00-2 2v2l8 5.349L18 8z"/></svg>
+                        <a href="mailto:anzikofred@gmail.com" class="hover:underline">Email Us</a>
+                    </p>
+                    <p class="flex items-center justify-center sm:justify-start mb-2 sm:mb-0 sm:mr-6">
+                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M17.388 1.488A1.5 1.5 0 0015.892 0L2.112 7.412a1.5 1.5 0 00.323 2.89L9.43 12.35l2.457 7.032a1.5 1.5 0 002.89-.324L20 4.112A1.5 1.5 0 0017.388 1.488z"/></svg>
+                        <a href="https://wa.me/256742453863?text=Hello%2C%20I'd%20like%20to%20learn%20more%20about%20Kivulu!" class="hover:underline">WhatsApp Us</a>
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-sm text-center">
+                © 2025 Kivulu. All Rights Reserved.
+            </div>
         </div>
     </footer>
 
